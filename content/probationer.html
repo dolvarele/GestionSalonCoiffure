@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+<!-- pour moi -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+
+    <!-- Title Page-->
+    <title>EMPLOYEE</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+	
+	<link rel="stylesheet" href="table_responsive/css/dataTables.bootstrap.min.css" type="text/css"/>
+	<link rel="stylesheet" href="table_responsive/css/responsive.bootstrap.min.css" type="text/css"/>
+
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+
+
+    <!-- Main CSS class="login-wrap" class="login-form" -->
+    <link href="../css/theme.css" rel="stylesheet" media="all">
+ 
+</head>
+
+<body class="animsition">
+	<div class="page-wrapper">
+	
+		<aside class="menu-sidebar2">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/log.PNG" alt="HSS" />
+                </a>
+            </div>
+            <div class="menu-sidebar2__content js-scrollbar1">
+                <!-- <div class="account2"> -->
+                    <!-- <div class="image img-cir img-120"> -->
+                        <!-- <img src="images/icon/log.PNG" alt="John Doe" /> -->
+                    <!-- </div> -->
+                    <!-- <h4 class="name">john doe</h4> -->
+                    <!-- <a href="#">Sign out</a> -->
+                <!-- </div> -->
+                <nav class="navbar-sidebar2">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                
+                                <li>
+                                    <a href="index2.html">
+                                        <i class="fas fa-tachometer-alt"></i>My first acccount </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../inbox.html">
+                                <i class="fas fa-chart-bar"></i>Appointment</a>
+                            <span class="inbox-num">3</span>
+                        </li>
+                        <li>
+                            <a href="service.html">
+                               <i class="fas fa-trophy"></i>services </a>
+                        </li>
+						<li>
+                            <a href="employee.html">
+                                <i class="fas fa-shopping-basket"></i>Employee</a>
+                        </li>
+						<li>
+                            <a href="training.html">
+                                <i class="fas fa-copy"></i>Training</a>
+                        </li>
+						
+						<li>
+                            <a href="probationer.html">
+                                <i class="fas fa-tachometer-alt"></i>Probationer</a>
+                        </li>
+						
+						
+                      
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+   
+        <div class="page-content--bgeServ page-container2">
+            
+				<h3 class="title-5 m-b-35">Probationer Management</h3>
+                <div >
+                  
+                        
+                        <div >
+                            <form action="" method="post">
+								<div style="margin-top:25px;" class="row tab-pane ">
+									
+									
+									<div class="col-xs-12 col-sm-6 col-md-6" >						
+										<div class="form-group">
+										  <label for="lastname"><font>Last Name</font><span class="form-required" style="color:#E10430"> *</span></label>
+										  <input type="text" class="form-control" placeholder="Last Name..." id="lastname" name="lastname" onblur="verification_onblur_js('motifs');"/>
+										 
+										</div>
+									</div>
+									
+									<div class="col-xs-12 col-sm-6 col-md-6" >						
+										<div class="form-group">
+										  <label for="firstname"><font>Fist Name</font><span class="form-required" style="color:#E10430"> *</span></label>
+										  <input type="text" class="form-control" placeholder="First Name..." id="firstname" name="firstname" onblur="verification_onblur_js('motifs');"/>
+										 
+										</div>
+									</div>
+									
+									<div class="col-xs-12 col-sm-6 col-md-6" >						
+										<div class="form-group">
+										  <label for="phoneNumb"><font>Phone number</font><span class="form-required" style="color:#E10430"> *</span></label>
+										  <input type="text" class="form-control" placeholder="First Name..." id="firstname" name="firstname" onblur="verification_onblur_js('motifs');"/>
+										 
+										</div>
+									</div>
+									
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										
+										<div class="form-group">
+										  <label for="email"><font>Email</font><span class="form-required" style="color:#E10430"> </span></label>
+										  <input class="form-control" id="email" placeholder="email adresse ..."  name="email" ></input>
+										  
+										</div>
+									</div>
+									
+									
+									<div >
+										<div class="col-xs-12 col-sm-12 col-md-12 " style="margin-top:25px;" align = "center" social-button">
+											<button class="au-btn au-btn--block au-btn--blue m-b-20">SAVE</button>
+											<button class="au-btn au-btn--block au-btn--blue2">RESET</button>
+										</div>
+									</div>
+									
+								</div>
+								
+                            </form>
+							
+							<div class="row"></div><hr/>  <br>
+		
+
+							<div class="col-xs-12 col-sm-12 col-md-12 page-wrapper" align="center" style="margin-top:10px;" >					
+								<label><h3> LIST OF PROBATIONERS </h3></label>								
+								<div class="col-xs-12 col-sm-12 col-md-12" id="tab_utilisateurs">	
+									
+									           <div class="row">
+										<div class="col-md-12">
+											<!-- DATA TABLE -->
+											
+											<div class="table-data__tool">
+												<div class="table-data__tool-left">
+													<div class="rs-select2--light rs-select2--md">
+														<select class="js-select2" name="property">
+															<option selected="selected">All Properties</option>
+															<option value="">Option 1</option>
+															<option value="">Option 2</option>
+														</select>
+														<div class="dropDownSelect2"></div>
+													</div>
+													<div class="rs-select2--light rs-select2--sm">
+														<select class="js-select2" name="time">
+															<option selected="selected">Today</option>
+															<option value="">3 Days</option>
+															<option value="">1 Week</option>
+														</select>
+														<div class="dropDownSelect2"></div>
+													</div>
+													<button class="au-btn-filter">
+														<i class="zmdi zmdi-filter-list"></i>filters</button>
+												</div>
+												<div class="table-data__tool-right">
+												
+													<div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
+														<select class="js-select2" name="type">
+															<option selected="selected">Export</option>
+															<option value="">Option 1</option>
+															<option value="">Option 2</option>
+														</select>
+														<div class="dropDownSelect2"></div>
+													</div>
+												</div>
+											</div>
+											<div class="table-responsive table-responsive-data2">
+												<table class="table table-data2">
+													<thead>
+														<tr>
+															<th>
+																<label class="au-checkbox">
+																	<input type="checkbox">
+																	<span class="au-checkmark"></span>
+																</label>
+															</th>
+															<th>first name</th>
+															<th>last name</th>
+															<th>email</th>
+															<th>creation date</th>
+															<th>phone number</th>
+															
+															<th></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="tr-shadow">
+															<td>
+																<label class="au-checkbox">
+																	<input type="checkbox">
+																	<span class="au-checkmark"></span>
+																</label>
+															</td>
+															<td>Ciara</td>
+															<td>Lemo</td>
+															<td>
+																<span class="block-email">ciara@example.com</span>
+															</td>
+															
+															<td>2018-09-27 02:12</td>
+															<td class="desc">637552145</td>
+															
+															<td>
+																<div class="table-data-feature">
+																	<button class="item" data-toggle="tooltip" data-placement="top" title="Send">
+																		<i class="zmdi zmdi-mail-send"></i>
+																	</button>
+																	<button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+																		<i class="zmdi zmdi-edit"></i>
+																	</button>
+																	<button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+																		<i class="zmdi zmdi-delete"></i>
+																	</button>
+																	<button class="item" data-toggle="tooltip" data-placement="top" title="More">
+																		<i class="zmdi zmdi-more"></i>
+																	</button>
+																</div>
+															</td>
+														</tr>
+														<tr class="spacer"></tr>
+														
+														
+													</tbody>
+												</table>
+											</div>
+											<!-- END DATA TABLE -->
+										</div>
+									</div>
+									
+								</div>
+								</div>
+                            
+                        </div>
+                    
+                </div>
+           
+        </div>
+	</div>
+
+	 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+     
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
